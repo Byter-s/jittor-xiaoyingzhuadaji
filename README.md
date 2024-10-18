@@ -18,7 +18,7 @@
 
 ## 安装
 
-本项目在4090上运行，一张卡训练一个风格需要半小时。
+本项目在NVIDIA RTX4090上运行，单卡训练一个风格的时间约为20min。
 
 #### 运行环境
 
@@ -39,7 +39,7 @@ pip install peft==0.10.0
 
 
 #### 预训练模型
-预训练权重（LORA）位于`./style`目录下。预训练权重已传给了比赛官方，可联系官方获取。生成时，在run.py中配置权重路径即可。
+预训练权重（LORA）位于`./style`目录下。预训练权重已上传至比赛官方，可联系官方获取。生成时，在run.py中配置权重路径即可。
 
 
 ## 数据预处理：
@@ -71,7 +71,9 @@ bash ./run.sh
   - 运行test.py，将在`./output`目录下生成图像
 
 ## 致谢
-JDiffusion .....(to be updated)
+- [Jittor](https://github.com/Jittor/jittor)
+- [JDiffusion](https://github.com/JittorRepos/JDiffusion)
+- [Dreambooth-Stable-Diffusion](https://github.com/XavierXiao/Dreambooth-Stable-Diffusion)
 
 ## 联系方式
 - **陈军**: QQ：2829924753
